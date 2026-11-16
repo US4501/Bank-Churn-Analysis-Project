@@ -1,7 +1,7 @@
 # Bank Churn Analysis – SQL Project
 
 **Author:** Utkarsh Singh  
-**Tools Used:** SQL (MySQL), Visual Studio  
+**Tools Used:** SQL (MySQL), Python (pandas, matplotlib), Visual Studio  
 
 ---
 
@@ -254,6 +254,27 @@ Insight:
 | 18–25     | 0%                     |
 
 - Customers aged 36–55 make up about 80% of churners and should be the retention priority.
+
+---
+
+##  Python Charts
+
+The notebook [`Bank_Churn_Charts.ipynb`](Bank_Churn_Charts.ipynb) adds three charts to the SQL analysis. It reads `bank_churn_data.csv` and checks its summary numbers against the SQL results.
+
+### Churned customers by age group
+![Churned customers by age group](chart_age_group.png)
+
+The 46–55 group is the largest (688 customers, 42.3%). Ages 36–55 together are about 80% of churners.
+
+### Churned customers by income group
+![Churned customers by income group](chart_income_group.png)
+
+"Less than $40K" is the largest group (612 customers, 37.6%). This is a share of churners, not a churn rate.
+
+### Tenure of churned customers
+![Tenure of churned customers](chart_tenure.png)
+
+Churn spikes at exactly 36 months: 430 customers (26%).
 
 ---
 
